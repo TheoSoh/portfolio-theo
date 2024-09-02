@@ -1,0 +1,35 @@
+/* Core css */
+html * {
+  box-sizing: border-box; 
+  color: #000;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-family: 'Heebo', sans-serif;
+  background-color: #fafafa;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* ----- Keyframes & animations -----*/
+.js-faded-outside-view {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 750ms ease-out;
+}
+
+.js-fade-into-view {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,105 @@
+/* ----- Start of Header ----- */
+header {
+    display: flex;
+    padding: 1.25rem 6%;
+    background-color: #fafafa;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 1.5rem;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuBtn, .close-container {
+    display: none;
+  }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* -- Start of hover effect -- */
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 0.125rem;
+    background: #000;
+    transition: 0.4s;
+}
+
+.nav-list li a:hover::before {
+    width: 100%;
+}
+/* -- End of hover effect -- */
+/* ----- End of Header ----- */
+
+/* ----- Start of CSS for small screen devices ----- */
+@media only screen and (max-width: 600px) {
+  
+    /* ----- Start of header ----- */
+    header {
+        padding: 0.625rem 6%;
+    }
+    
+    /* -- Start of toggle-menu -- */
+    .nav-container {
+        flex-direction: column;
+        position: fixed;
+        align-items:center;
+        background-color: #fff;
+        top: -9999px;
+        right: 0;
+        min-height: fit-content;
+        width: 100%;
+        padding: 1.25rem 1.25rem 0.625rem 1.25rem;
+        transition: 0.8s;
+        z-index: 9999;
+        box-shadow: 0 200px 200px #888;
+    }
+    
+    .nav-container.active {
+        top: -1px;
+    }
+    
+    .menuBtn, .closeBtn {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .close-container {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+    /* -- End of toggle-menu -- */
+    /* ----- End of header ----- */
+    /* ----- End of CSS for small screen devices ----- */

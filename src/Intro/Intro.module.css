@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 4rem);
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: max(5.75rem, 12%);
+}
+  
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: fit-content;
+    border-right: 2px outset #000;
+    border-bottom: 2px outset #000;
+    box-shadow: 3px 3px 2px #dadada;
+    text-align: center;
+}
+  
+.intro-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 22.75rem;
+    padding: 0 0 0 2rem;
+}
+  
+.intro-text-container h1 {
+    font-size: 1.375rem;
+    text-shadow: 1px 1px 1px #dadada;
+}
+  
+.swe-subtitle {
+    font-size: 0.75rem;
+    color:#888;
+    padding: 0 0 1.25rem 0;
+    text-shadow: 1px 1px 1px #dadada;
+}
+
+.intro-description {
+    text-shadow: 1px 1px 1px #dadada;
+}
+
+.intro-img-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 18.25rem;
+    height: 100%;
+}
+
+.intro-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    -webkit-user-drag: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .intro {
+        height: calc(100vh - 2.75rem);
+        margin-top: 2.75rem;
+    }
+  
+    .intro-container {
+        flex-direction: column;
+        max-width: 17.25rem;
+    }
+
+    /* FUNKAR EJ */
+    .intro-container:hover {
+        animation: expand-border 2s ease-in forwards
+    }
+  
+    .intro-text-container {
+        padding: 0 1rem;
+        height: auto;
+        flex: 1;
+    }
+  
+    .intro-text-container h1 {
+        font-size: 1rem;
+        text-shadow: 2px 2px 2px #dadada;
+    }
+  
+    .swe-subtitle {
+        font-size: 0.625rem;
+    }
+  
+    .intro-text {
+        font-size: 0.75rem;
+    }
+  
+    .intro-img-container {
+        width: 100%;
+        height: 9.125rem;
+    }
+  
+    .intro-img {
+        height: 100%;
+        width: 55%;
+    }
+}
+
+/* Keyframes & animations */
+/* FUNKAR EJ */
+@keyframes expand-border {
+    100% {
+        border-right: 10px outset #000;
+        border-bottom: 10px outset #000;
+    }
+}
