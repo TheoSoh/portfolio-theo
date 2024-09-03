@@ -1,3 +1,16 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
 org: theosoh
-app: portfolio-theo
-service: my-first-service
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: test
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          path: /
+          method: get
