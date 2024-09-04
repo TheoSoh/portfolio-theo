@@ -5,14 +5,14 @@ function Intro() {
 
     return(
         <section className={styles.intro}>
-            <div className={styles.intro-container}>
-                <div className={styles.intro-text-container}>
+            <div className={styles.introContainer}>
+                <div className={styles.introTextContainer}>
                     <h1>Student in<br/>"Programme of<br/>Systems analysis"</h1>
-                    <p className={styles.swe-subtitle}>(Systemvetenskapliga programmet)</p>
-                    <p className={styles.intro-description}>Hello, I'm Theo Sohlman<br/>A software engineer with high ambitions</p>
+                    <p className={styles.sweSubtitle}>(Systemvetenskapliga programmet)</p>
+                    <p className={styles.introDescription}>Hello, I'm Theo Sohlman<br/>A software engineer with high ambitions</p>
                 </div>
-                <div className={styles.intro-img-container}>
-                    <img class={styles.intro-img} src={profilePic} alt="Profile picture" oncontextmenu="return false"/>
+                <div className={styles.introImgContainer}>
+                    <img className={styles.introImg} src={profilePic} alt="Profile picture"/>
                 </div>
             </div>
         </section>

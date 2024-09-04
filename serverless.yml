@@ -1,16 +1,29 @@
-# "org" ensures this Service is used with the correct Serverless Framework Access Key.
-org: theosoh
-# "service" is the name of this project. This will also be added to your AWS resource names.
-service: test
+frameworkVersion: ">=4.2.4"
+service: portfolio-theo
+configValidationMode: error
+
+plugins:
+  - serverless-lift
+
+custom:
+    stage: ${opt:stage, "staging"}
+    region: ${self:custom.availableRegions.${self:custom.stage}}
+    availableRegions:
+        prod: eu-north-1
+    availableDomains:
+        landingPage:
+            prod:
+                domain: theosohlman.com
+                certificate: arn:aws:acm:us-east-1:009160073124:certificate/2fb4e049-827d-4983-84c9-bb8698829714
 
 provider:
-  name: aws
-  runtime: nodejs20.x
+    name: aws
+    region: ${self:custom.region}
+    deploymentBucket:
+        name: s3-theo-serverless-deployments
+        blockPublicAccess: true
 
-functions:
-  hello:
-    handler: handler.hello
-    events:
-      - httpApi:
-          path: /
-          method: get
+constructs:
+    landing-page:
+        type: single-page-app
+        path: 'dist'
