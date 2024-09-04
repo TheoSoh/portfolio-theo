@@ -16,16 +16,16 @@ header {
     height: 1.5rem;
 }
 
-.nav-container {
+.navContainer {
     display: flex;
     flex-direction: row;
 }
 
-.menuBtn, .close-container {
+.menuBtn, .closeContainer {
     display: none;
   }
 
-.nav-list {
+.navList {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -33,11 +33,11 @@ header {
 }
 
 /* -- Start of hover effect -- */
-.nav-list li {
+.navList li {
     position: relative;
 }
 
-.nav-list li a::before {
+.navList li a::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -48,7 +48,7 @@ header {
     transition: 0.4s;
 }
 
-.nav-list li a:hover::before {
+.navList li a:hover::before {
     width: 100%;
 }
 /* -- End of hover effect -- */
@@ -63,7 +63,7 @@ header {
     }
     
     /* -- Start of toggle-menu -- */
-    .nav-container {
+    .navContainer {
         flex-direction: column;
         position: fixed;
         align-items:center;
@@ -78,7 +78,7 @@ header {
         box-shadow: 0 200px 200px #888;
     }
     
-    .nav-container.active {
+    .navContainer.active {
         top: -1px;
     }
     
@@ -87,13 +87,13 @@ header {
         cursor: pointer;
     }
     
-    .close-container {
+    .closeContainer {
         display: flex;
         width: 100%;
         justify-content: flex-end;
     }
     
-    .nav-list {
+    .navList {
         display: flex;
         flex-direction: column;
         align-items: center;

@@ -11,8 +11,8 @@
     margin-top: 4rem;
     padding-top: max(5.75rem, 12%);
 }
-  
-.intro-container {
+
+.introContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,7 @@
     text-align: center;
 }
   
-.intro-text-container {
+.introTextContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,30 +34,30 @@
     padding: 0 0 0 2rem;
 }
   
-.intro-text-container h1 {
+.introTextContainer h1 {
     font-size: 1.375rem;
     text-shadow: 1px 1px 1px #dadada;
 }
   
-.swe-subtitle {
+.sweSubtitle {
     font-size: 0.75rem;
     color:#888;
     padding: 0 0 1.25rem 0;
     text-shadow: 1px 1px 1px #dadada;
 }
 
-.intro-description {
+.introDescription {
     text-shadow: 1px 1px 1px #dadada;
 }
 
-.intro-img-container {
+.introImgContainer {
     display: flex;
     justify-content: flex-end;
     width: 18.25rem;
     height: 100%;
 }
 
-.intro-img {
+.introImg {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -71,41 +71,41 @@
         margin-top: 2.75rem;
     }
   
-    .intro-container {
+    .introContainer {
         flex-direction: column;
         max-width: 17.25rem;
     }
 
     /* FUNKAR EJ */
-    .intro-container:hover {
+    .introContainer:hover {
         animation: expand-border 2s ease-in forwards
     }
   
-    .intro-text-container {
+    .introTextContainer {
         padding: 0 1rem;
         height: auto;
         flex: 1;
     }
   
-    .intro-text-container h1 {
+    .introTextContainer h1 {
         font-size: 1rem;
         text-shadow: 2px 2px 2px #dadada;
     }
   
-    .swe-subtitle {
+    .sweSubtitle {
         font-size: 0.625rem;
     }
   
-    .intro-text {
+    .introText {
         font-size: 0.75rem;
     }
   
-    .intro-img-container {
+    .introImgContainer {
         width: 100%;
         height: 9.125rem;
     }
   
-    .intro-img {
+    .introImg {
         height: 100%;
         width: 55%;
     }
