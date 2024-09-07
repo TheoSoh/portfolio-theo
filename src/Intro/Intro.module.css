@@ -10,6 +10,7 @@
     width: 100%;
     margin-top: 4rem;
     padding-top: max(5.75rem, 12%);
+    background: radial-gradient(at top left, rgba(250,241,228,1) 0%, rgba(255,255,255,0) 50%);
 }
 
 .introContainer {
@@ -18,9 +19,7 @@
     justify-content: center;
     height: 20rem;
     width: fit-content;
-    border-right: 2px outset #000;
-    border-bottom: 2px outset #000;
-    box-shadow: 3px 3px 2px #dadada;
+    box-shadow: 4px 4px 2px -2px #D2B48C;
     text-align: center;
 }
   
