@@ -28,7 +28,7 @@ const Projects = () => {
   return (
     <section className='grid grid-cols-1 w-full'>
       <h1 className='w-full font-mono pb-9 lg:col-span-2'>Go ahead, have a look at my projects...</h1>
-      <div className='grid grid-cols-1 w-full gap-14 md:gap-10 lg:gap-16 lg:grid-cols-2'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-14 md:gap-10 lg:gap-16 '>
         <Project 
         title='PORTFOLIO' 
         subtitle='(theosohlman.com)' 
@@ -48,7 +48,7 @@ const Projects = () => {
         />
         <Project 
         title='IMAGE TO ASCII-ART'
-        textBody='Console based program that converts specified image to ASCII-art. Functionality is accessible through a <b>custom CLI</b> created with regular expressions. Includes unit test automation through <b>unittest</b> library.' 
+        textBody='Console based program that converts specified image to ASCII-art. Functionality is accessible through a <b>custom CLI</b> created with regular expressions. Includes unit testing through <b>unittest</b> library.' 
         href='https://github.com/TheoSoh/cv-web-app-aspnet-mvc' 
         createdUsingIcons={createdUsingIconsP3}
         />
@@ -63,7 +63,7 @@ const Projects = () => {
         lgStyle='lg:col-span-2'
         title='BUSINESS MANAGEMENT PROGRAM'
         subtitle='(For a hatmaker)'
-        textBody='Java-application that prioritize <b>functionality</b>. The GUI created with NetBean’s drag and drop function. The system include <b>inventory</b> and <b>account management</b>, as well as a custom designed <b>MySQL-database</b>.' 
+        textBody='Java-application that prioritize <b>functionality</b>. The GUI was created with NetBean’s drag and drop function. The system include <b>inventory</b> and <b>account management</b>, as well as a custom designed <b>MySQL-database</b>.' 
         href='https://github.com/TheoSoh/hattmakare-repository' 
         createdUsingIcons={createdUsingIconsP5}
         vcsIcon={githubOriginalIcon}
