@@ -27,7 +27,7 @@ const Projects = () => {
   const createdUsingIconsP5 = [javaIcon, dotnetIcon, netbeansIcon, mysqlIcon]
 
   return (
-    <section ref={projectsSectionRef} className='grid grid-cols-1 w-full'>
+    <section className='grid grid-cols-1 w-full'>
       <h1 className='w-full font-mono pb-9 lg:col-span-2'>Go ahead, have a look at my projects...</h1>
       <div className='grid grid-cols-1 w-full gap-14 md:gap-10 lg:gap-16 lg:grid-cols-2'>
         <Project 
