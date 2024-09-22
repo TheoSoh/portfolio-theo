@@ -1,35 +1,22 @@
-/* Core css */
-html * {
-  box-sizing: border-box; 
-  color: #000;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  font-family: 'Heebo', sans-serif;
-  background-color: #fafafa;
-}
+@layer base {
+  html {
+    @apply bg-gradient-to-b from-blue to-gray;
+    font-size: 14px; /* Default font-size */
+  }
 
-a {
-  font-weight: bold;
-  text-decoration: none;
-}
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; /* For larger screens */
+    }
+  }
 
-
-/* ----- Keyframes & animations -----*/
-.js-faded-outside-view {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 750ms ease-out;
-}
-
-.js-fade-into-view {
-  opacity: 1;
-  transform: translateY(0);
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px; /* larger screens */
+    }
+  }
 }
