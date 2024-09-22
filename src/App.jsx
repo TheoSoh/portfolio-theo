@@ -1,6 +1,7 @@
 import NavMenu from './components/NavMenu.jsx'
 import Hero from './sections/Hero.jsx'
-import About from './sections/About.jsx';
+import About from './sections/About.jsx'
+import Projects from './sections/Projects.jsx'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
           </div>
           <div className='flex flex-col w-full relative gap-16 md:gap-20 lg:gap-28'>
             <About />
+            <Projects />
           </div>
         </div>
       </div>
