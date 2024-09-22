@@ -28,8 +28,9 @@ const Projects = () => {
   return (
     <section className='grid grid-cols-1 w-full'>
       <h1 className='w-full font-mono pb-9 lg:col-span-2'>Go ahead, have a look at my projects...</h1>
-      <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-14 md:gap-10 lg:gap-16 '>
-        <Project 
+      <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-14 md:gap-10 lg:gap-16'>
+        <div className='flex flex-col gap-14 md:gap-10 lg:gap-16'>
+          <Project 
         title='PORTFOLIO' 
         subtitle='(theosohlman.com)' 
         textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization.</b> And yeah, you guessed it, it’s the website you’re looking at right now...' 
@@ -39,6 +40,15 @@ const Projects = () => {
         hostedWithIcons={hostedWithIconsP1}
         />
         <Project 
+        title='IMAGE TO ASCII-ART'
+        textBody='Console based program that converts specified image to ASCII-art. Functionality is accessible through a <b>custom CLI</b> created with regular expressions. Includes unit testing through <b>unittest</b> library.' 
+        href='https://github.com/TheoSoh/cv-web-app-aspnet-mvc' 
+        createdUsingIcons={createdUsingIconsP3}
+        />
+        </div>
+        
+        <div className='flex flex-col gap-14 md:gap-10 lg:gap-16'>
+        <Project 
         title='CV-WEB-APP'
         subtitle='(LinkedIn-like)'
         textBody='<b>ASP.NET Core MVC</b> web application. Main priority is <b>functionality</b> and <b>backend performance</b>. Includes user authentication, authorization and message’s.'
@@ -46,12 +56,7 @@ const Projects = () => {
         createdUsingIcons={createdUsingIconsP2} 
         vcsIcon={githubOriginalIcon}
         />
-        <Project 
-        title='IMAGE TO ASCII-ART'
-        textBody='Console based program that converts specified image to ASCII-art. Functionality is accessible through a <b>custom CLI</b> created with regular expressions. Includes unit testing through <b>unittest</b> library.' 
-        href='https://github.com/TheoSoh/cv-web-app-aspnet-mvc' 
-        createdUsingIcons={createdUsingIconsP3}
-        />
+        
         <Project 
         title='PODCAST MANAGER'
         textBody='<b>WinForm</b> based program that utilizes <b>serialization</b> and <b>deserialization</b> to store podcast data that is retrieved from an <b>RSS-feed</b>. Focuses on having a <b>layered system architecture</b>.' 
@@ -59,6 +64,7 @@ const Projects = () => {
         createdUsingIcons={createdUsingIconsP4}
         vcsIcon={githubOriginalIcon}
         />
+        </div>
         <Project 
         lgStyle='lg:col-span-2'
         title='BUSINESS MANAGEMENT PROGRAM'
