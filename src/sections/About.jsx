@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section ref={aboutSectionRef} className='flex flex-col gap-8 w-full h-fit text-justify lg:text-left'>
+    <section className='flex flex-col gap-8 w-full h-fit text-justify lg:text-left'>
       <p className='font-mono '>A little about me...</p>
       <p>I’m currently studying my <b>fifth term</b> at Örebro University, enrolled in the <b>Programme of Systems Analysis</b> (Systemvetenskapliga programmet). I’ve always had a strong connection to technology, with computers playing a key role in my life from a young age.</p>
       <p>Over the past two years, my academic journey has solidified my <b>passion</b> for problem-solving and building user-centric, robust and scalable systems. I thrive in environments where complex challenges need elegant and efficient solutions. <b>My goal</b> is to leverage my skills and knowledge to create impactful software that not only solves real-world problems but also enhances user experiences.</p>
