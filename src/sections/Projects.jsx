@@ -6,7 +6,6 @@ import tailwindIcon from '../assets/project_icons/tailwindcss.svg'
 import javascriptIcon from '../assets/project_icons/javascript.svg'
 import csharpIcon from '../assets/project_icons/csharp.svg'
 import reactIcon from '../assets/project_icons/react.svg'
-import threeIcon from '../assets/project_icons/threejs.svg'
 import dotnetIcon from '../assets/project_icons/dotnet.svg'
 import mssqlIcon from '../assets/project_icons/mssql.svg'
 import githubOriginalIcon from '../assets/project_icons/github_original.svg'
@@ -18,7 +17,7 @@ import javaIcon from '../assets/project_icons/java.svg'
 import mysqlIcon from '../assets/project_icons/mysql.svg'
 
 const Projects = () => {
-  const createdUsingIconsP1 = [htmlIcon, tailwindIcon, javascriptIcon, reactIcon, threeIcon]
+  const createdUsingIconsP1 = [htmlIcon, tailwindIcon, javascriptIcon, reactIcon]
   const hostedWithIconsP1 = [awsIcon, serverlessIcon]
 
   const createdUsingIconsP2 = [htmlIcon, cssIcon, csharpIcon, dotnetIcon, mssqlIcon]
