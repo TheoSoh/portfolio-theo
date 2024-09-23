@@ -2,7 +2,8 @@ import NavMenu from './components/NavMenu.jsx'
 import Hero from './sections/Hero.jsx'
 import About from './sections/About.jsx'
 import Projects from './sections/Projects.jsx'
-import Education from './sections/Education.jsx';
+import Education from './sections/Education.jsx'
+import Contact from './sections/Contact.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
             <About />
             <Projects />
             <Education />
+            <Contact />
           </div>
         </div>
       </div>

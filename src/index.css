@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-gradient-to-b from-blue to-gray;
+    @apply bg-gradient-to-b from-gray to-blue;
     font-size: 14px; /* Default font-size */
   }
 
