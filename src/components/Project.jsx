@@ -3,7 +3,7 @@ import AnchorToGitHub from "./AnchorToGitHub"
  function Project({ lgStyle, title, subtitle, textBody, href, createdUsingIcons, vcsIcon, hostedWithIcons }) {
   return (
     <div 
-    className={`flex flex-col bg-blue w-full h-fit relative 
+    className={`flex flex-col bg-gray w-full h-fit relative 
     px-3 pt-2 pb-3 border border-graphite rounded-md ${lgStyle ? lgStyle:''}`}>
       <h2 className='font-mono'>
         <b>{title}</b> {subtitle && (<span className='text-xs'>{subtitle}</span>)}

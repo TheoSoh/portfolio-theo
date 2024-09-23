@@ -7,10 +7,9 @@ export default {
   theme: {
     colors: {
       /** Färger inte fastställda! */
-      'test': '#eefcff',
-      'gray': '#DCE1E1',
+      'gray': '#EFEDE9',
       'graphite': '#333333',
-      'blue': '#EFEDE9',
+      'blue': '#DCE1E1',
       'green': '#A3BCA5',
       'light-green': '#BFD9C1',
     },

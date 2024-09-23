@@ -60,7 +60,7 @@ const Education = () => {
         courses={skovdeUniversityCourses}
         />
         <div>
-        <h2 className='font-mono font-bold text-xl'>Total Average International GPA: 4.0/4.0</h2>
+        <h2 className='font-mono text-xl'>Total Average International GPA: 4.0/4.0</h2>
         <p>(Highest possible grade in every course)</p>
         </div>
       </div>
