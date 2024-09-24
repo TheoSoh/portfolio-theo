@@ -1,4 +1,4 @@
-import AnchorToGitHub from "./AnchorToGitHub"
+import AnchorToGitHub from "./AnchorToGithub.jsx"
 
  function Project({ lgStyle, title, subtitle, textBody, href, createdUsingIcons, vcsIcon, hostedWithIcons }) {
   return (
