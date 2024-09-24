@@ -76,10 +76,10 @@ const Contact = () => {
           <button 
           type='submit'
           disabled={isSubmitting}
-          className='bg-green w-fit px-3 border rounded-md 
+          className='bg-green w-fit px-6 border rounded-md 
           hover:bg-gradient-to-t from-light-green to-green'
           >
-            {isSubmitting ? 'Sending...' : 'Send Message'}
+            {isSubmitting ? 'Sending...' : 'Send'}
           </button>
           {responseMessage && <p className='font-semibold'>{responseMessage}</p>}
         </div>
