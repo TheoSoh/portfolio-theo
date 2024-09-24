@@ -1,4 +1,3 @@
-import React from 'react'
 import University from '../components/University'
 
 const Education = () => {

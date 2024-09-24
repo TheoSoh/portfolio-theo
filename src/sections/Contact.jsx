@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
-import InputField from '../components/InputField.jsx'
-import TextAreaField from '../components/TextAreaField.jsx'
+import InputField from '../components/InputField'
+import TextAreaField from '../components/TextAreaField'
 
 const Contact = () => {
   const [formData, setFormData] = useState({

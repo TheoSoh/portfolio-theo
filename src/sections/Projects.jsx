@@ -1,5 +1,4 @@
-import React from 'react'
-import Project from '../components/Project.jsx'
+import Project from '../components/Project'
 import htmlIcon from '../assets/project_icons/html5.svg'
 import cssIcon from '../assets/project_icons/css3.svg'
 import tailwindIcon from '../assets/project_icons/tailwindcss.svg'
