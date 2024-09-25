@@ -32,7 +32,7 @@ const Projects = ({ sectionRef }) => {
           <Project 
           title='PORTFOLIO' 
           subtitle='(theosohlman.com)' 
-          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization.</b> An API endpoint is setup with <b>API Gateway</b> to a <b>lambda function</b> that uses <b>resend</b> to handle the <b>POST method</b>.' 
+          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization.</b> An API endpoint is setup with <b>API Gateway</b> to a <b>lambda function</b> that uses <b>resend</b> to handle <b>POST methods</b>.' 
           href='https://github.com/TheoSoh/portfolio-theo' 
           createdUsingIcons={createdUsingIconsP1} 
           vcsIcon={githubOriginalIcon}
