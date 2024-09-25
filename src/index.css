@@ -44,15 +44,14 @@
     font-size: 14px; /* Default font-size */
   }
 
-  @media (min-width: 768px) {
-    html {
-      font-size: 16px; /* For larger screens */
-    }
-  }
-
   @media (min-width: 1024px) {
     html {
-      font-size: 18px; /* larger screens */
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 1536px) {
+    html {
+      font-size: 18px;
     }
   }
 }
