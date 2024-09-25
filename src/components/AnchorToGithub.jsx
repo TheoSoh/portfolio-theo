@@ -1,9 +1,8 @@
 
-
-function AnchorToGitHub({link: href}) {
+const AnchorToGitHub = ({link}) => {
     return (
       <a 
-      href={href} 
+      href={link} 
       target='_blank'
       rel='noopener noreferrer'
       aria-label='Open github.com'
