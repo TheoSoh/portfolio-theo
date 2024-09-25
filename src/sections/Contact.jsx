@@ -10,6 +10,7 @@ const Contact = ({ sectionRef }) => {
     email: '',
     message: '',
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [responseMessage, setResponseMessage] = useState('')
 
   // Handle form input changes
@@ -23,7 +24,8 @@ const Contact = ({ sectionRef }) => {
 
   // Handle form submission
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent the default form submit action
+    e.preventDefault() // Prevent the default form submit action
+    setIsSubmitting(true)
 
     try {
       // Make the POST request to the API Gateway endpoint
@@ -34,6 +36,8 @@ const Contact = ({ sectionRef }) => {
     } catch (error) {
       setResponseMessage('Failed to send message.')
       console.error('Error sending email:', error)
+    } finally {
+      setIsSubmitting(false) // Stop loading state
     }
   }
 
@@ -78,10 +82,11 @@ const Contact = ({ sectionRef }) => {
         <div className='flex flex-wrap gap-6'>
           <button 
           type='submit'
+          disabled={isSubmitting}
           className='bg-green w-fit px-6 border rounded-md 
           hover:bg-gradient-to-t from-light-green to-green'
           >
-            Send
+            {isSubmitting ? 'Sending...' : 'Send'}
           </button>
           {responseMessage && <p className='font-semibold'>{responseMessage}</p>}
         </div>
