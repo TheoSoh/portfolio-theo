@@ -26,7 +26,7 @@ const Hero = () => {
     <section className='flex flex-col bg-transparent w-full md:w-4/12 h-[70vh] md:fixed'>
       <h1 className='font-bold text-6xl pb-4'>Theo Sohlman</h1>
       <h2 className='font-semibold text-lg pb-8'>Software Dev./Information Systems Student</h2>
-      <p className='text-justify md:text-left lg:w-2/3'>Eager to apply knowledge and experience to deliver value and innovation. Explore my work and discover how I can contribute to your next project.</p>
+      <p className='text-justify md:text-left 2xl:w-2/3'>Eager to apply knowledge and experience to deliver value and innovation. Explore my work and discover how I can contribute to your next project.</p>
       <div className='flex flex-col justify-end w-full h-full'>
         <Navigation />
         <a 
