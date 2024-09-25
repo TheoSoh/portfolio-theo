@@ -4,8 +4,7 @@ const useIntersectionObserver = (sections, setActiveSection) => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '-200px',
-      threshold: 0.28,
+      rootMargin: '-400px 0px -450px 0px',
     }
 
     const callback = (entries) => {
