@@ -1,5 +1,4 @@
 
-
  const University = ({universityTitle, courses}) => {
   return (
     <div className='flex flex-col gap-2'>
