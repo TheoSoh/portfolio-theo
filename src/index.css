@@ -1,35 +1,58 @@
-/* Core css */
-html * {
-  box-sizing: border-box; 
-  color: #000;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  font-family: 'Heebo', sans-serif;
-  background-color: #fafafa;
-}
+@layer base {
+  .scroll-target {
+    scroll-margin-top: 15vh;
+  }
 
-a {
-  font-weight: bold;
-  text-decoration: none;
-}
+  .fade-in-y {
+    animation-name: fade-in-y;
+    animation-duration: 1s;
+  }
 
+  @keyframes fade-in-y {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-/* ----- Keyframes & animations -----*/
-.js-faded-outside-view {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 750ms ease-out;
-}
+  .fade-in-x {
+    animation-name: fade-in-x;
+    animation-duration: 1s;
+  }
 
-.js-fade-into-view {
-  opacity: 1;
-  transform: translateY(0);
+  @keyframes fade-in-x {
+    from {
+      opacity: 0;
+      transform: translateX(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  html {
+    @apply bg-gradient-to-b from-gray to-blue select-none;
+    font-size: 14px; /* Default font-size */
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; /* For larger screens */
+    }
+  }
+
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px; /* larger screens */
+    }
+  }
 }
