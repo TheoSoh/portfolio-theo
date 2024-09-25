@@ -1,3 +1,4 @@
+import { useSectionsContext } from '../contexts/sectionsContext'
 import Navigation from '../components/Navigation'
 import linkedinIcon from '../assets/socials_icons/linkedin.svg'
 import instagramIcon from '../assets/socials_icons/instagram.svg'
@@ -11,11 +12,21 @@ const Hero = () => {
     github: [githubIcon, 'https://github.com/TheoSoh'],
   }
 
+  const sectionsContext = useSectionsContext()
+
+  const handleScroll = (sectionRef) => {
+    if (sectionRef && sectionRef.current) {
+      sectionRef.current.scrollIntoView({ 
+        behavior: 'smooth',
+      })
+    }
+  }
+
   return (
-    <section className='flex flex-col bg-transparent w-full md:w-4/12 md:h-[calc(100vh-(7rem*2))] md:fixed'>
+    <section className='flex flex-col bg-transparent w-full md:w-4/12 h-[70vh] md:fixed'>
       <h1 className='font-bold text-6xl pb-4'>Theo Sohlman</h1>
       <h2 className='font-semibold text-lg pb-8'>Software Dev./Information Systems Student</h2>
-      <p className='text-justify pb-36 lg:pb-0 md:text-left lg:w-2/3'>Eager to apply knowledge and experience to deliver value and innovation. Explore my work and discover how I can contribute to your next project.</p>
+      <p className='text-justify md:text-left lg:w-2/3'>Eager to apply knowledge and experience to deliver value and innovation. Explore my work and discover how I can contribute to your next project.</p>
       <div className='flex flex-col justify-end w-full h-full'>
         <Navigation />
         <a 
@@ -30,14 +41,19 @@ const Hero = () => {
         <div className='flex flex-wrap gap-4 w-full h-fit'>
           {Object.values(socials).map(([icon, url], index) =>(
             <a key={index} href={url} target='_blank' rel='noopener noreferrer'>
-              <img src={icon} alt='social-icon' className='w-auto h-8 
+              <img src={icon} alt='social-icon' draggable='false' className='w-auto h-8 
               border border-graphite rounded-md'
               />
             </a>
           ))}
-          <img src={contactIcon} className='w-auto h-8 
-          border border-graphite rounded-md'
-          />
+          <button onClick={() => {handleScroll(sectionsContext['Contact'])}}>
+            <img 
+            src={contactIcon} 
+            alt='contact-icon' 
+            draggable='false' 
+            className='w-auto h-8 border border-graphite rounded-md'
+            />
+          </button>
         </div>
       </div>
     </section>
