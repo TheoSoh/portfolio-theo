@@ -3,16 +3,40 @@
 @tailwind utilities;
 
 @layer base {
-  .fade-in {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+  .scroll-target {
+    scroll-margin-top: 15vh;
   }
 
-  .fade-in.visible {
-    opacity: 1;
+  .fade-in-y {
+    animation-name: fade-in-y;
+    animation-duration: 1s;
   }
 
-  .js-fade-into-view {
+  @keyframes fade-in-y {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-x {
+    animation-name: fade-in-x;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade-in-x {
+    from {
+      opacity: 0;
+      transform: translateX(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   html {
