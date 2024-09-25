@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSectionsContext } from '../contexts/sectionsContext'
-import useIntersectionObserver from './useIntersectionObserver'
+import useIntersectionObserver from './useSectionIntersectionObserver'
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState()
@@ -21,17 +21,17 @@ const Navigation = () => {
   }, [activeSection])
 
   return (
-    <nav className='flex w-full h-full items-center'>
+    <nav className='hidden md:flex w-full h-full items-center fade-in-x '>
       <ul className='flex flex-col w-fit '>
         {Object.entries(sections).map(([key, sectionRef]) => (
           <li key={key}>
-            <p
+            <button
             {...(activeSection !== sectionRef.current && {onClick:() => setActiveSection(sectionRef)})}
             className={`${activeSection === sectionRef.current ? 'text-graphite' : 'text-green cursor-pointer'} 
-            font-mono font-bold md:text-lg`}
+            font-mono font-bold text-lg`}
             >
               {key}
-            </p>
+            </button>
           </li>
         ))}
       </ul>
