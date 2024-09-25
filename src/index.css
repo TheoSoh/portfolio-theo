@@ -3,6 +3,18 @@
 @tailwind utilities;
 
 @layer base {
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+  .js-fade-into-view {
+  }
+
   html {
     @apply bg-gradient-to-b from-gray to-blue select-none;
     font-size: 14px; /* Default font-size */

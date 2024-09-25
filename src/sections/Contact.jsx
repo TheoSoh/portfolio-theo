@@ -3,7 +3,7 @@ import axios from 'axios';
 import InputField from '../components/InputField'
 import TextAreaField from '../components/TextAreaField'
 
-const Contact = () => {
+const Contact = ({ sectionRef }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -42,7 +42,7 @@ const Contact = () => {
   }
 
   return (
-    <section className='flex flex-col w-full gap-9'>
+    <section ref={sectionRef} className='flex flex-col w-full gap-9'>
       <h1>Feel free to send me a message below...</h1>
       <form 
       onSubmit={handleSubmit}

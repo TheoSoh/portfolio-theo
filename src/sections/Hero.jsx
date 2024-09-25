@@ -1,3 +1,4 @@
+import Navigation from '../components/Navigation'
 import linkedinIcon from '../assets/socials_icons/linkedin.svg'
 import instagramIcon from '../assets/socials_icons/instagram.svg'
 import githubIcon from '../assets/socials_icons/github.svg'
@@ -16,6 +17,7 @@ const Hero = () => {
       <h2 className='font-semibold text-lg pb-8'>Software Dev./Information Systems Student</h2>
       <p className='text-justify pb-36 lg:pb-0 md:text-left lg:w-2/3'>Eager to apply knowledge and experience to deliver value and innovation. Explore my work and discover how I can contribute to your next project.</p>
       <div className='flex flex-col justify-end w-full h-full'>
+        <Navigation />
         <a 
         className='bg-green w-fit font-mono text-sm border 
         border-graphite rounded-md px-3 mb-6 hover:bg-gradient-to-t

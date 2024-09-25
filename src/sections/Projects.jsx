@@ -15,7 +15,7 @@ import netbeansIcon from '../assets/project_icons/netbeans.svg'
 import javaIcon from '../assets/project_icons/java.svg'
 import mysqlIcon from '../assets/project_icons/mysql.svg'
 
-const Projects = () => {
+const Projects = ({ sectionRef }) => {
   const createdUsingIconsP1 = [htmlIcon, tailwindIcon, javascriptIcon, reactIcon]
   const hostedWithIconsP1 = [awsIcon, serverlessIcon]
 
@@ -25,7 +25,7 @@ const Projects = () => {
   const createdUsingIconsP5 = [javaIcon, dotnetIcon, netbeansIcon, mysqlIcon]
 
   return (
-    <section className='grid grid-cols-1 w-full gap-9'>
+    <section ref={sectionRef} className='grid grid-cols-1 w-full gap-9'>
       <h1 className='w-full font-mono lg:col-span-2'>Go ahead, have a look at my projects...</h1>
       <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-14 md:gap-10 lg:gap-16'>
         <div className='flex flex-col gap-14 md:gap-10 lg:gap-16'>
