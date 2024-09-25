@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import axios from 'axios';
 import InputField from '../components/InputField'
 import TextAreaField from '../components/TextAreaField'
+import useFadeInIntersectionObserver from '../components/useFadeInIntersectionObserver';
 
 const Contact = ({ sectionRef }) => {
   const [formData, setFormData] = useState({
@@ -9,8 +10,6 @@ const Contact = ({ sectionRef }) => {
     email: '',
     message: '',
   })
-
-  const [isSubmitting, setIsSubmitting] = useState(false)
   const [responseMessage, setResponseMessage] = useState('')
 
   // Handle form input changes
@@ -25,7 +24,6 @@ const Contact = ({ sectionRef }) => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent the default form submit action
-    setIsSubmitting(true); // Optional: to show a loading state
 
     try {
       // Make the POST request to the API Gateway endpoint
@@ -36,17 +34,22 @@ const Contact = ({ sectionRef }) => {
     } catch (error) {
       setResponseMessage('Failed to send message.')
       console.error('Error sending email:', error)
-    } finally {
-      setIsSubmitting(false); // Stop the loading state
     }
   }
+
+  const [isVisible, setIsVisible] = useState(false)
+  const formRef = useRef(null)
+  useFadeInIntersectionObserver(formRef, setIsVisible)
 
   return (
     <section ref={sectionRef} className='flex flex-col w-full gap-9'>
       <h1>Feel free to send me a message below...</h1>
-      <form 
+      <form
+      ref={formRef}
       onSubmit={handleSubmit}
-      className='flex flex-col w-full lg:w-2/3 min-w-fit bg-gray border rounded-md p-8 gap-6'
+      className={`flex flex-col w-full lg:w-2/3 min-w-fit 
+      bg-gray border rounded-md p-8 gap-6
+      ${isVisible ? 'fade-in-y' : 'opacity-0'}`}
       >
         <h2 className='font-mono font-semibold'>Send me a message!</h2>
         <InputField 
@@ -75,11 +78,10 @@ const Contact = ({ sectionRef }) => {
         <div className='flex flex-wrap gap-6'>
           <button 
           type='submit'
-          disabled={isSubmitting}
           className='bg-green w-fit px-6 border rounded-md 
           hover:bg-gradient-to-t from-light-green to-green'
           >
-            {isSubmitting ? 'Sending...' : 'Send'}
+            Send
           </button>
           {responseMessage && <p className='font-semibold'>{responseMessage}</p>}
         </div>
