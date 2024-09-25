@@ -25,14 +25,14 @@ const Projects = ({ sectionRef }) => {
   const createdUsingIconsP5 = [javaIcon, dotnetIcon, netbeansIcon, mysqlIcon]
 
   return (
-    <section ref={sectionRef} className='scroll-target grid grid-cols-1 w-full gap-9'>
-      <h1 className='w-full font-mono lg:col-span-2'>Go ahead, have a look at my projects...</h1>
-      <div className='grid grid-cols-1 lg:grid-cols-2 w-full gap-14 md:gap-10 lg:gap-16'>
-        <div className='flex flex-col gap-14 md:gap-10 lg:gap-16'>
+    <section ref={sectionRef} className='scroll-target flex flex-col w-full gap-9'>
+      <h1 className='w-full font-mono'>Go ahead, have a look at my projects...</h1>
+      <div className='grid grid-cols-2 w-full gap-10'>
+        <div className='flex flex-col col-span-2 2xl:col-span-1 gap-10'>
           <Project 
           title='PORTFOLIO' 
           subtitle='(theosohlman.com)' 
-          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization.</b> And yeah, you guessed it, it’s the website you’re looking at right now...' 
+          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization.</b> An API endpoint is setup with <b>API Gateway</b> to a <b>lambda function</b> that uses <b>resend</b> to handle the <b>POST method</b>.' 
           href='https://github.com/TheoSoh/portfolio-theo' 
           createdUsingIcons={createdUsingIconsP1} 
           vcsIcon={githubOriginalIcon}
@@ -46,7 +46,7 @@ const Projects = ({ sectionRef }) => {
           />
         </div>
         
-        <div className='flex flex-col gap-14 md:gap-10 lg:gap-16'>
+        <div className='flex flex-col col-span-2 2xl:col-span-1 gap-10'>
           <Project 
           title='CV-WEB-APP'
           subtitle='(LinkedIn-like)'
@@ -65,7 +65,7 @@ const Projects = ({ sectionRef }) => {
           />
         </div>
         <Project 
-        lgStyle='lg:col-span-2'
+        lgStyle='col-span-2'
         title='BUSINESS MANAGEMENT PROGRAM'
         subtitle='(For a hatmaker)'
         textBody='Java-application that prioritize <b>functionality</b>. The GUI was created with NetBean’s drag and drop function. The system include <b>inventory</b> and <b>account management</b>, as well as a custom designed <b>MySQL-database</b>.' 
