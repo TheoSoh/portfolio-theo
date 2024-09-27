@@ -40,7 +40,7 @@
   }
 
   html {
-    @apply bg-gradient-to-b from-gray to-blue select-none;
+    @apply bg-blue bg-gradient-to-b from-gray to-blue select-none;
     font-size: 14px; /* Default font-size */
   }
 
