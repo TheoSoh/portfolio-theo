@@ -28,11 +28,11 @@ const Projects = ({ sectionRef }) => {
     <section ref={sectionRef} className='scroll-target flex flex-col w-full gap-9'>
       <h1 className='w-full font-mono'>Go ahead, have a look at my projects...</h1>
       <div className='grid grid-cols-2 w-full gap-10'>
-        <div className='flex flex-col col-span-2 2xl:col-span-1 gap-10'>
+        <div className='flex flex-col col-span-2 xl:col-span-1 gap-10'>
           <Project 
           title='PORTFOLIO' 
           subtitle='(theosohlman.com)' 
-          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization.</b> The contact form sends an <b>HTTP request</b> through an <b>API end point</b> to a <b>lambda function</b> which utilizes the <b>resend API</b> to send me an email.' 
+          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization</b>. Contact form sends an <b>HTTP request</b> through an <b>API end point</b> to a <b>lambda function</b> which utilizes the <b>resend API</b> to send me an email.' 
           href='https://github.com/TheoSoh/portfolio-theo' 
           createdUsingIcons={createdUsingIconsP1} 
           vcsIcon={githubOriginalIcon}
@@ -46,7 +46,7 @@ const Projects = ({ sectionRef }) => {
           />
         </div>
         
-        <div className='flex flex-col col-span-2 2xl:col-span-1 gap-10'>
+        <div className='flex flex-col col-span-2 xl:col-span-1 gap-10'>
           <Project 
           title='CV-WEB-APP'
           subtitle='(LinkedIn-like)'
