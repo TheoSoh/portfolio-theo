@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSectionsContext } from '../contexts/sectionsContext'
-import useIntersectionObserver from './useSectionIntersectionObserver'
+import useSectionIntersectionObserver from './useSectionIntersectionObserver'
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState()
@@ -12,7 +12,7 @@ const Navigation = () => {
     }
   }
 
-  useIntersectionObserver(sections, setActiveSection)
+  useSectionIntersectionObserver(sections, setActiveSection)
 
   useEffect(() => {
     if (activeSection && activeSection.current) {
@@ -26,9 +26,11 @@ const Navigation = () => {
         {Object.entries(sections).map(([key, sectionRef]) => (
           <li key={key}>
             <button
+            type='button'
+            aria-label='Navigate to section'
             {...(activeSection !== sectionRef.current && {onClick:() => setActiveSection(sectionRef)})}
-            className={`${activeSection === sectionRef.current ? 'text-graphite' : 'text-green cursor-pointer'} 
-            font-mono font-bold text-lg`}
+            className={`${activeSection === sectionRef.current ? 'text-graphite cursor-default' : 'text-green active:text-light-green'} 
+            font-mono font-bold text-lg `}
             >
               {key}
             </button>
