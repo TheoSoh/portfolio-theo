@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 
-const useIntersectionObserver = (sections, setActiveSection) => {
+const useSectionIntersectionObserver = (sections, setActiveSection) => {
   useEffect(() => {
     const options = {
       root: null,
-      rootMargin: '-400px 0px -450px 0px',
+      rootMargin: '-60% 0px -40% 0px',
     }
 
     const callback = (entries) => {
@@ -30,4 +30,4 @@ const useIntersectionObserver = (sections, setActiveSection) => {
   }, [sections, setActiveSection])
 }
 
-export default useIntersectionObserver
+export default useSectionIntersectionObserver
