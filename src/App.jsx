@@ -26,7 +26,7 @@ function App() {
           <div className='w-full h-fit mb-20'>
             <Hero />
           </div>
-          <div className='flex flex-col w-full relative gap-20 2xl:gap-28'>
+          <div className='flex flex-col w-full relative'>
             <About sectionRef={aboutRef} />
             <Projects sectionRef={projectsRef} />
             <Education sectionRef={educationRef} />
