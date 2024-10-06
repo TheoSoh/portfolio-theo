@@ -35,31 +35,31 @@ const Education = ({ sectionRef }) => {
       <h1 className='font-mono'>My completed or ongoing courses...</h1>
       <div className='flex flex-col w-full gap-8'>
         <University 
-        universityTitle='Örebro University' 
+        universityTitle='ÖREBRO UNIVERSITY' 
         courses={oerebroUniversityCourses}
         />
         <University 
-        universityTitle='Luleå University of Technology' 
+        universityTitle='LULEÅ UNIVERSITY OF TECHNOLOGY' 
         courses={luleaUniversityCourses}
         />
         <University 
-        universityTitle='Kristianstad University' 
+        universityTitle='KRISTIANSTAD UNIVERSITY' 
         courses={krisianstadUniversityCourses}
         />
         <University 
-        universityTitle='Stockholm University' 
+        universityTitle='STOCKHOLM UNIVERSITY' 
         courses={stockholmUniversityCourses}
         />
         <University 
-        universityTitle='University of Borås' 
+        universityTitle='UNIVERSITY OF BORÅS' 
         courses={borasUniversityCourses}
         />
         <University 
-        universityTitle='University of Skövde' 
+        universityTitle='UNIVERSITY OF SKÖVDE' 
         courses={skovdeUniversityCourses}
         />
         <div>
-        <h2 className='font-mono text-xl'>Total Average International GPA: 4.0/4.0</h2>
+        <h2 className='font-mono text-xl'>Average International GPA: 4.0/4.0</h2>
         <p>(Highest possible grade in every course)</p>
         </div>
       </div>

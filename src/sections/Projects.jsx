@@ -32,7 +32,7 @@ const Projects = ({ sectionRef }) => {
           <Project 
           title='PORTFOLIO' 
           subtitle='(theosohlman.com)' 
-          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization</b>. Contact form sends an <b>HTTP request</b> through an <b>API end point</b> to a <b>lambda function</b> which utilizes the <b>resend API</b> to send me an email.' 
+          textBody='Single-page web application showcasing my profile and work. Focused on <b>front-end technologies</b> and <b>performance optimization</b>.' 
           href='https://github.com/TheoSoh/portfolio-theo' 
           createdUsingIcons={createdUsingIconsP1} 
           vcsIcon={githubOriginalIcon}
