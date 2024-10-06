@@ -25,7 +25,10 @@ const Projects = ({ sectionRef }) => {
   const createdUsingIconsP5 = [javaIcon, dotnetIcon, netbeansIcon, mysqlIcon]
 
   return (
-    <section ref={sectionRef} className='scroll-target flex flex-col w-full gap-9'>
+    <section
+    ref={sectionRef}
+    className='scroll-target flex flex-col w-full gap-9 pb-20 lg:pb-24'
+    >
       <h1 className='w-full font-mono'>Go ahead, have a look at my projects...</h1>
       <div className='grid grid-cols-2 w-full gap-10'>
         <div className='flex flex-col col-span-2 xl:col-span-1 gap-10'>
