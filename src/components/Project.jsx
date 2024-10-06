@@ -18,7 +18,7 @@ import useFadeInIntersectionObserver from './useFadeInIntersectionObserver';
       <h2 className='font-mono'>
         <b>{title}</b> {subtitle && (<span className='text-xs'>{subtitle}</span>)}
       </h2>
-      <p className=' pt-2 pb-4'
+      <p className='pt-2 pb-4 text-sm'
       dangerouslySetInnerHTML={{ __html: textBody }}
       />
       <AnchorToGitHub link={href}/>
