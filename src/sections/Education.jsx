@@ -33,7 +33,7 @@ const Education = ({ sectionRef }) => {
   return (
     <section
     ref={sectionRef}
-    className='scroll-target flex flex-col w-full gap-9 pb-20 md:pb-16 2xl:pb-28'
+    className='scroll-target flex flex-col w-full gap-9'
     >
       <h1 className='font-mono'>My completed or ongoing courses...</h1>
       <div className='flex flex-col w-full gap-8'>

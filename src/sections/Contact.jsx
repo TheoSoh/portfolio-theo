@@ -35,7 +35,7 @@ const Contact = ({ sectionRef }) => {
   }
 
   return (
-    <section ref={sectionRef} className='flex flex-col w-full gap-9'>
+    <section ref={sectionRef} className='flex flex-col w-full gap-9 pt-20 md:pt-16 2xl:pt-28'>
       <h1>Feel free to send me a message...</h1>
       <div
       ref={formRef}
