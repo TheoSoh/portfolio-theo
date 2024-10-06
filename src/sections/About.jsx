@@ -4,7 +4,7 @@ const About = ({ sectionRef }) => {
     <section 
     ref={sectionRef} 
     className='scroll-target flex flex-col gap-8 w-full 
-    h-fit text-justify lg:text-left pb-20 xl:pb-24'
+    h-fit text-justify lg:text-left pb-20 md:pb-16 2xl:pb-28'
     >
       <p className='font-mono'>A little about me...</p>
       <p>I’m currently in my <b>fifth semester</b> at Örebro University (Sweden), enrolled in the <b>Programme of Systems Analysis</b> (Systemvetenskapliga programmet). I have always had a strong connection to technology, with computers playing a key role in my life from a young age.</p>

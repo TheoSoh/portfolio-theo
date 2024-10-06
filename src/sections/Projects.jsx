@@ -27,7 +27,7 @@ const Projects = ({ sectionRef }) => {
   return (
     <section
     ref={sectionRef}
-    className='scroll-target flex flex-col w-full gap-9 pb-20 lg:pb-24'
+    className='scroll-target flex flex-col w-full gap-9 pb-20 md:pb-16 2xl:pb-28'
     >
       <h1 className='w-full font-mono'>Go ahead, have a look at my projects...</h1>
       <div className='grid grid-cols-2 w-full gap-10'>
@@ -42,13 +42,13 @@ const Projects = ({ sectionRef }) => {
           hostedWithIcons={hostedWithIconsP1}
           />
           <Project 
-          title='IMAGE TO ASCII-ART'
-          textBody='Console based program that converts specified image to ASCII-art. Functionality is accessible through a <b>custom CLI</b> created with regular expressions. Includes unit testing through <b>unittest</b> library.' 
-          href='https://github.com/TheoSoh/image-to-ascii-art' 
-          createdUsingIcons={createdUsingIconsP3}
+          title='PODCAST MANAGER'
+          textBody='<b>WinForm</b> based program that utilizes <b>serialization</b> and <b>deserialization</b> to store podcast data that is retrieved from an <b>RSS-feed</b>. Focuses on having a <b>layered system architecture</b>.' 
+          href='https://github.com/TheoSoh/pod-project' 
+          createdUsingIcons={createdUsingIconsP4}
+          vcsIcon={githubOriginalIcon}
           />
         </div>
-        
         <div className='flex flex-col col-span-2 xl:col-span-1 gap-10'>
           <Project 
           title='CV-WEB-APP'
@@ -60,21 +60,20 @@ const Projects = ({ sectionRef }) => {
           />
           
           <Project 
-          title='PODCAST MANAGER'
-          textBody='<b>WinForm</b> based program that utilizes <b>serialization</b> and <b>deserialization</b> to store podcast data that is retrieved from an <b>RSS-feed</b>. Focuses on having a <b>layered system architecture</b>.' 
-          href='https://github.com/TheoSoh/pod-project' 
-          createdUsingIcons={createdUsingIconsP4}
+          title='BUSINESS MANAGEMENT PROGRAM'
+          subtitle='(For a hatmaker)'
+          textBody='Java-application that prioritize <b>functionality</b>. The GUI was created with NetBean’s drag and drop function. The system include <b>inventory</b> and <b>account management</b>, as well as a custom designed <b>MySQL-database</b>.' 
+          href='https://github.com/TheoSoh/hattmakare-repository' 
+          createdUsingIcons={createdUsingIconsP5}
           vcsIcon={githubOriginalIcon}
           />
         </div>
         <Project 
         lgStyle='col-span-2'
-        title='BUSINESS MANAGEMENT PROGRAM'
-        subtitle='(For a hatmaker)'
-        textBody='Java-application that prioritize <b>functionality</b>. The GUI was created with NetBean’s drag and drop function. The system include <b>inventory</b> and <b>account management</b>, as well as a custom designed <b>MySQL-database</b>.' 
-        href='https://github.com/TheoSoh/hattmakare-repository' 
-        createdUsingIcons={createdUsingIconsP5}
-        vcsIcon={githubOriginalIcon}
+        title='IMAGE TO ASCII-ART'
+        textBody='Console based program that converts specified image to ASCII-art. Functionality is accessible through a <b>custom CLI</b> created with regular expressions. Includes unit testing through <b>unittest</b> library.' 
+        href='https://github.com/TheoSoh/image-to-ascii-art' 
+        createdUsingIcons={createdUsingIconsP3}
         />
       </div>
     </section>
