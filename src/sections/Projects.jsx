@@ -19,10 +19,10 @@ const Projects = ({ sectionRef }) => {
   const createdUsingIconsP1 = [htmlIcon, tailwindIcon, javascriptIcon, reactIcon]
   const hostedWithIconsP1 = [awsIcon, serverlessIcon]
 
-  const createdUsingIconsP2 = [htmlIcon, cssIcon, csharpIcon, dotnetIcon, mssqlIcon]
+  const createdUsingIconsP2 = [htmlIcon, cssIcon, javascriptIcon, csharpIcon, dotnetIcon, mssqlIcon]
   const createdUsingIconsP3 = [pythonIcon]
   const createdUsingIconsP4 = [csharpIcon, dotnetIcon]
-  const createdUsingIconsP5 = [javaIcon, dotnetIcon, netbeansIcon, mysqlIcon]
+  const createdUsingIconsP5 = [javaIcon, netbeansIcon, mysqlIcon]
 
   return (
     <section
