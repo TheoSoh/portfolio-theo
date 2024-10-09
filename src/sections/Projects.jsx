@@ -16,7 +16,7 @@ import javaIcon from '../assets/project_icons/java.svg'
 import mysqlIcon from '../assets/project_icons/mysql.svg'
 
 const Projects = ({ sectionRef }) => {
-  const createdUsingIconsP1 = [htmlIcon, tailwindIcon, javascriptIcon, reactIcon]
+  const createdUsingIconsP1 = [reactIcon, javascriptIcon, tailwindIcon]
   const hostedWithIconsP1 = [awsIcon, serverlessIcon]
 
   const createdUsingIconsP2 = [htmlIcon, cssIcon, javascriptIcon, csharpIcon, dotnetIcon, mssqlIcon]
