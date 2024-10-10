@@ -68,7 +68,7 @@ const Contact = ({ sectionRef }) => {
           <p>(+46) 070-689 38 39</p>
         </div>
         <a 
-        href={'mailto:theo.sohlman@gmail.com'}
+        href={'mailto:theo.sohlman@gmail.com?subject=Hello Theo'}
         target='_blank'
         rel='noopener noreferrer'
         aria-label='Send an email'

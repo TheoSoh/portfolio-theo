@@ -40,12 +40,13 @@
   }
 
   html {
-    @apply bg-gray bg-gradient-to-b from-gray to-blue select-none;
+    @apply bg-gray bg-gradient-to-b from-gray to-blue;
     font-size: 14px; /* Default font-size */
     input:-webkit-autofill,
     input:-webkit-autofill:active {
       transition: background-color 5000s ease-in-out 0s;
-      -webkit-box-shadow: 0 0 0px 1000px var(--input-box-shadow-color, #ffffff00) inset;
+      -webkit-box-shadow: 0 0 0px 1000px
+        var(--input-box-shadow-color, #ffffff00) inset;
     }
   }
 
