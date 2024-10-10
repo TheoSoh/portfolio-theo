@@ -28,10 +28,10 @@ const Hero = () => {
         >
           Download CV
         </a>
-        <div className='flex flex-wrap gap-4 w-full h-fit'>
+        <div className='flex flex-wrap gap-6 w-full h-fit'>
           {Object.values(socials).map(([icon, url], index) =>(
             <a key={index} href={url} target='_blank' rel='noopener noreferrer'>
-              <img src={icon} alt='social-icon' draggable='false' className='w-auto h-8 
+              <img src={icon} alt='social-icon' draggable='false' className='w-auto h-9 
               border border-graphite rounded-md select-none'
               />
             </a>
