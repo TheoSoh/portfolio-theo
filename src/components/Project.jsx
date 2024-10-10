@@ -25,8 +25,12 @@ import useFadeInIntersectionObserver from './useFadeInIntersectionObserver';
       <p className='font-mono text-sm pt-4 pb-2'>CREATED USING</p>
       <div className='flex flex-wrap gap-3'>
         {createdUsingIcons.map((icon, index) => (
-          <img key={index} src={icon} draggable='false' 
-          alt='project-icon' className='h-8 max-w-8'
+          <img 
+          key={index}
+          src={icon}
+          alt='project-icon'
+          draggable='false'
+          className='h-8 max-w-8 select-none'
           />
         ))}
       </div>
@@ -38,9 +42,12 @@ import useFadeInIntersectionObserver from './useFadeInIntersectionObserver';
           target='_blank' 
           rel='noopener noreferrer'
           referrerPolicy='no-referrer'
-          className='w-fit'
+          className='w-fit select-none'
           >
-            <img src={vcsIcon} className='h-8 w-fit'/>
+            <img
+            src={vcsIcon}
+            draggable='false'
+            className='h-8 w-fit'/>
           </a>
         </>
       )}
@@ -49,7 +56,12 @@ import useFadeInIntersectionObserver from './useFadeInIntersectionObserver';
           <p className='font-mono text-sm pt-4 pb-2'>HOSTED WITH</p>
           <div className='flex flex-wrap gap-3'>
             {hostedWithIcons.map((icon, index) =>(
-              <img key={index} src={icon} className='w-9 max-h-[1.4rem]'/>
+              <img 
+              key={index}
+              src={icon}
+              draggable='false'
+              className='w-9 max-h-[1.4rem] select-none'
+              />
             ))}
           </div>
         </>
