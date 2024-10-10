@@ -1,4 +1,3 @@
-import { useSectionsContext } from '../contexts/sectionsContext'
 import Navigation from '../components/Navigation'
 import linkedinIcon from '../assets/socials_icons/linkedin.svg'
 import instagramIcon from '../assets/socials_icons/instagram.svg'
@@ -10,16 +9,7 @@ const Hero = () => {
     linkedIn: [linkedinIcon, 'https://www.linkedin.com/in/theo-sohlman/'],
     instagram: [instagramIcon, 'https://www.instagram.com/theosohlman/'],
     github: [githubIcon, 'https://github.com/TheoSoh'],
-  }
-
-  const sectionsContext = useSectionsContext()
-
-  const handleScroll = (sectionRef) => {
-    if (sectionRef && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ 
-        behavior: 'smooth',
-      })
-    }
+    contact: [contactIcon, 'mailto:theo.sohlman@gmail.com?subject=Hello Theo'],
   }
 
   return (
@@ -42,18 +32,10 @@ const Hero = () => {
           {Object.values(socials).map(([icon, url], index) =>(
             <a key={index} href={url} target='_blank' rel='noopener noreferrer'>
               <img src={icon} alt='social-icon' draggable='false' className='w-auto h-8 
-              border border-graphite rounded-md'
+              border border-graphite rounded-md select-none'
               />
             </a>
           ))}
-          <button onClick={() => {handleScroll(sectionsContext['Contact'])}}>
-            <img 
-            src={contactIcon} 
-            alt='contact-icon' 
-            draggable='false' 
-            className='w-auto h-8 border border-graphite rounded-md'
-            />
-          </button>
         </div>
       </div>
     </section>
