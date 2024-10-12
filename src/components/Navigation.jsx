@@ -21,7 +21,7 @@ const Navigation = () => {
   }, [activeSection])
 
   return (
-    <nav className='hidden md:flex w-full h-full items-center fade-in-x '>
+    <nav className='hidden lg:flex w-full h-full items-center fade-in-x '>
       <ul className='flex flex-col w-fit select-none'>
         {Object.entries(sections).map(([key, sectionRef]) => (
           <li key={key}>
