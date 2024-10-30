@@ -1,0 +1,31 @@
+name: Deploy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  aws_deploy:
+    name: Push to AWS
+    runs-on: ubuntu-22.04
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2
+
+      - name: Yarn install
+        run: yarn install --frozen-lockfile
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: eu-north-1
+          role-to-assume: ${{ secrets.AWS_ROLE_TO_ASSUME }}
+          role-session-name: GitHub-Deploy-User
+
+      - name: Serverless deploy
+        run: ./node_modules/.bin/serverless deploy --stage=prod --force

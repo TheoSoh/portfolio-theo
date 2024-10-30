@@ -40,7 +40,7 @@
   }
 
   html {
-    @apply bg-gray bg-gradient-to-b from-gray to-blue;
+    @apply bg-gray bg-gradient-to-b from-graphite to-blue;
     font-size: 14px; /* Default font-size */
     input:-webkit-autofill,
     input:-webkit-autofill:active {
