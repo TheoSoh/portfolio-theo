@@ -11,22 +11,22 @@ const useFadeInIntersectionObserver = (ref, setIsVisible) => {
     const callback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.target) {
-          setIsVisible(true)
-          observer.unobserve(entry.target)
+          setIsVisible(true);
+          observer.unobserve(entry.target);
         }
-      })
-    }
+      });
+    };
 
     const observer = new IntersectionObserver(callback, options);
-    
+
     if (ref && ref.current) {
-      observer.observe(ref.current)
+      observer.observe(ref.current);
     }
 
     return () => {
-      if (ref.current) observer.unobserve(ref.current)
-    }
+      if (ref.current) observer.unobserve(ref.current);
+    };
   }, [ref, setIsVisible]);
-}
+};
 
-export default useFadeInIntersectionObserver
+export default useFadeInIntersectionObserver;

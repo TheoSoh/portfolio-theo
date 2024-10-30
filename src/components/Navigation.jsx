@@ -1,36 +1,37 @@
-import { useEffect, useState } from 'react'
-import { useSectionsContext } from '../contexts/sectionsContext'
-import useSectionIntersectionObserver from './useSectionIntersectionObserver'
+import { useEffect, useState } from 'react';
+import { useSectionsContext } from '../contexts/sectionsContext';
+import useSectionIntersectionObserver from './useSectionIntersectionObserver';
 
 const Navigation = () => {
-  const [activeSection, setActiveSection] = useState()
-  const sections = useSectionsContext()
+  const [activeSection, setActiveSection] = useState();
+  const sections = useSectionsContext();
 
   const handleScroll = (sectionRef) => {
     if (sectionRef && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth' })
+      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  };
 
-  useSectionIntersectionObserver(sections, setActiveSection)
+  useSectionIntersectionObserver(sections, setActiveSection);
 
   useEffect(() => {
     if (activeSection && activeSection.current) {
-      handleScroll(activeSection)
+      handleScroll(activeSection);
     }
-  }, [activeSection])
+  }, [activeSection]);
 
   return (
-    <nav className='hidden lg:flex w-full h-full items-center fade-in-x '>
-      <ul className='flex flex-col w-fit select-none'>
+    <nav className="fade-in-x hidden h-full w-full items-center lg:flex">
+      <ul className="flex w-fit select-none flex-col">
         {Object.entries(sections).map(([key, sectionRef]) => (
           <li key={key}>
             <button
-            type='button'
-            aria-label='Navigate to section'
-            {...(activeSection !== sectionRef.current && {onClick:() => setActiveSection(sectionRef)})}
-            className={`${activeSection === sectionRef.current ? 'text-graphite cursor-default' : 'text-green active:text-light-green'} 
-            font-mono font-bold text-lg `}
+              type="button"
+              aria-label="Navigate to section"
+              {...(activeSection !== sectionRef.current && {
+                onClick: () => setActiveSection(sectionRef),
+              })}
+              className={`${activeSection === sectionRef.current ? 'cursor-default text-graphite' : 'text-green active:text-light-green'} font-mono text-lg font-bold`}
             >
               {key}
             </button>
@@ -38,7 +39,7 @@ const Navigation = () => {
         ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

@@ -1,4 +1,4 @@
-frameworkVersion: ">=4.2.4"
+frameworkVersion: '>=4.2.4'
 service: portfolio-theo
 configValidationMode: error
 
@@ -26,4 +26,4 @@ provider:
 constructs:
   landing-page:
     type: single-page-app
-    path: "dist"
+    path: 'dist'

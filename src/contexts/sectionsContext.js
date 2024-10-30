@@ -1,13 +1,13 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext } from 'react';
 
-export const SectionsContext = createContext(undefined)
+export const SectionsContext = createContext(undefined);
 
 export const useSectionsContext = () => {
-    const sections = useContext(SectionsContext)
+  const sections = useContext(SectionsContext);
 
-    if (sections === undefined) {
-        throw new Error('useSectionContext must be used with a sectionsContext')
-    }
+  if (sections === undefined) {
+    throw new Error('useSectionContext must be used with a sectionsContext');
+  }
 
-    return sections
-}
+  return sections;
+};

@@ -1,33 +1,33 @@
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 const useSectionIntersectionObserver = (sections, setActiveSection) => {
   useEffect(() => {
     const options = {
       root: null,
       rootMargin: '-60% 0px -40% 0px',
-    }
+    };
 
     const callback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting && entry.target) {
-          setActiveSection(entry.target)
+          setActiveSection(entry.target);
         }
-      })
-    }
+      });
+    };
 
     const observer = new IntersectionObserver(callback, options);
 
-    const sectionRefs = Object.values(sections)
+    const sectionRefs = Object.values(sections);
     sectionRefs.forEach((sectionRef) => {
-      if (sectionRef) observer.observe(sectionRef.current)
-    })
+      if (sectionRef) observer.observe(sectionRef.current);
+    });
 
     return () => {
       sectionRefs.forEach((sectionRef) => {
-        if (sectionRef) observer.unobserve(sectionRef.current)
-      })
-    }
-  }, [sections, setActiveSection])
-}
+        if (sectionRef) observer.unobserve(sectionRef.current);
+      });
+    };
+  }, [sections, setActiveSection]);
+};
 
-export default useSectionIntersectionObserver
+export default useSectionIntersectionObserver;
