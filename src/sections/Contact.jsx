@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import clipboardCheckIcon from '../assets/contact_icons/clipboard-check.svg';
 import clipboardCopyIcon from '../assets/contact_icons/clipboard-copy.svg';
 import linkIcon from '../assets/contact_icons/link.svg';

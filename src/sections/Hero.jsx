@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="flex h-full w-full flex-col justify-end">
         <Navigation />
         <a
-          className="mb-6 w-fit rounded-md border border-graphite bg-green from-light-green to-green px-3 font-mono text-sm hover:bg-gradient-to-t"
+          className="mb-6 w-fit rounded-md border border-graphite bg-green from-light-green via-green to-green px-3 font-mono text-sm hover:bg-gradient-to-t"
           href="/CV_Theo_Sohlman.pdf"
           download="CV_Theo_Sohlman.pdf"
         >
@@ -31,12 +31,22 @@ const Hero = () => {
         </a>
         <div className="flex h-fit w-full flex-wrap gap-6">
           {Object.values(socials).map(([icon, url], index) => (
-            <a key={index} href={url} target="_blank" rel="noopener noreferrer">
+            <a
+              key={index}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md relative"
+            >
               <img
                 src={icon}
                 alt="social-icon"
                 draggable="false"
                 className="h-9 w-auto select-none rounded-md border border-graphite"
+              />
+              <span
+                className=" h-full w-full border rounded-md border-graphite absolute bottom-0 right-0 left-0
+                  to-[transparent] via-[transparent] from-light-green hover:bg-gradient-to-t"
               />
             </a>
           ))}

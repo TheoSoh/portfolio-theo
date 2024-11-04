@@ -31,7 +31,7 @@ const Navigation = () => {
               {...(activeSection !== sectionRef.current && {
                 onClick: () => setActiveSection(sectionRef),
               })}
-              className={`${activeSection === sectionRef.current ? 'cursor-default text-graphite' : 'text-green active:text-light-green'} font-mono text-lg font-bold`}
+              className={`${activeSection === sectionRef.current ? 'cursor-default bg-graphite' : 'bg-green hover:bg-gradient-to-t from-light-green via-green to-green'} text-[transparent] font-mono text-lg font-bold bg-clip-text`}
             >
               {key}
             </button>
