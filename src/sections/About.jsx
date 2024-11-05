@@ -20,11 +20,11 @@ const About = ({ sectionRef }) => {
       </p>
       <p>
         My <b>attention to detail</b> ensures that the work I produce is not only functional but
-        also meticulously crafted to meet high standards of usability and quality. As I look toward <b>the next step</b> in my career, I’m excited to bring my commitment to
-        excellence, eye for detail, and technical expertise into a professional setting.
+        also meticulously crafted to meet high standards of usability and quality.
       </p>
       <p>
-        
+        As I look toward <b>the next step</b> in my career, I’m excited to bring my commitment to
+        excellence, eye for detail, and technical expertise into a professional setting.
       </p>
     </section>
   );
