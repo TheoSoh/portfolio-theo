@@ -6,7 +6,7 @@ const About = ({ sectionRef }) => {
     >
       <p className="font-mono">A little about me...</p>
       <p>
-        I’m currently in my <b>fifth semester</b> at Örebro University (Sweden), enrolled in the{' '}
+        I’m currently in my <b>sixth and last semester</b> at Örebro University (Sweden), enrolled in the{' '}
         <b>Programme of Systems Analysis</b> (Systemvetenskapliga programmet). I have always had a
         strong connection to technology, with computers playing a significant role in my life from a
         young age.
@@ -20,11 +20,11 @@ const About = ({ sectionRef }) => {
       </p>
       <p>
         My <b>attention to detail</b> ensures that the work I produce is not only functional but
-        also meticulously crafted to meet high standards of usability and quality.
+        also meticulously crafted to meet high standards of usability, quality and performance.
       </p>
       <p>
         As I look toward <b>the next step</b> in my career, I’m excited to bring my commitment to
-        excellence, eye for detail, and technical expertise into a professional setting.
+        excellence, eye for detail and technical expertise into a professional setting.
       </p>
     </section>
   );

@@ -2,7 +2,8 @@ import University from '../components/University';
 
 const Education = ({ sectionRef }) => {
   const oerebroUniversityCourses = [
-    'Informatics, <b>Advanced course</b> (ongoing...)',
+    'Informatics, <b>Systems Development Project</b>, Intermediate Course (Ongoing...)',
+    'Informatics, <b>Advanced course</b>',
     '<b>Coping with Conflicts</b>',
     'Informatics, <b>.NET Web Applications</b>, Intermediate Course',
     'Informatics, <b>Database Management</b>, Intermediate Course',
