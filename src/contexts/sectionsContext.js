@@ -6,7 +6,7 @@ export const useSectionsContext = () => {
   const sections = useContext(SectionsContext);
 
   if (sections === undefined) {
-    throw new Error('useSectionContext must be used with a sectionsContext');
+    throw new Error('useSectionContext must be used within a sectionsContext');
   }
 
   return sections;
