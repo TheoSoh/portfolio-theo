@@ -6,20 +6,19 @@ const About = ({ sectionRef }) => {
     >
       <p className="font-mono">A little about me...</p>
       <p>
-        I’m currently in my <b>sixth and last semester</b> at Örebro University (Sweden), enrolled in the{' '}
-        <b>Programme of Systems Analysis</b> (Systemvetenskapliga programmet). I have always had a
-        strong connection to technology, with computers playing a significant role in my life from a
-        young age.
+        I recently graduated from the <b>Programme of Systems Analysis</b> at Örebro University in
+        Sweden. My passion for technology began early in life, with computers having played a
+        central role in shaping my interests and skills over the years.
       </p>
       <p>
-        Over the past two years, my academic journey has solidified my <b>passion</b> for
-        problem-solving and building user-centric, robust and scalable systems. I thrive in
+        My academic journey has further deepened this passion, especially
+        for problem-solving and designing user-centric, robust, and scalable systems. I thrive in
         environments where complex challenges need elegant and efficient solutions. <b>My goal</b>{' '}
         is to leverage my skills and knowledge to create impactful solutions that not only solves
         real-world problems but also enhances user experiences.
       </p>
       <p>
-        My <b>attention to detail</b> ensures that the work I produce is not only functional but
+        My <b>attention to detail</b> and <b>analytical ability</b> ensures that the work I produce is not only functional but
         also meticulously crafted to meet high standards of usability, quality and performance.
       </p>
       <p>
