@@ -75,7 +75,7 @@ const Contact = ({ sectionRef }) => {
         </div>
         <div>
           <h3 className="font-mono font-medium">Phone:</h3>
-          <p>(+46) 070-689 38 39</p>
+          <p>(+46) 70-689 38 39</p>
         </div>
         <a
           href={'mailto:theo.sohlman@gmail.com?subject=Hello Theo'}
