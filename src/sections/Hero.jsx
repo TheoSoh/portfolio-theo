@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="bg-transparent flex h-[60vh] w-full flex-col md:fixed md:h-[70vh] md:w-4/12">
+    <section className="bg-transparent flex h-[60vh] w-full flex-col md:sticky md:top-[15vh] md:h-[70vh]">
       <h1 className="pb-4 text-6xl font-bold md:text-4xl lg:text-6xl">Theo Sohlman</h1>
       <h2 className="pb-8 text-lg font-semibold">Software Dev.</h2>
       <p className="text-justify md:text-left 2xl:w-2/3">

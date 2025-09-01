@@ -23,7 +23,7 @@ function App() {
     <SectionsContext.Provider value={sections}>
       <div className="flex w-full justify-center px-[15%] py-[15vh] text-graphite md:px-[10%]">
         <div className="grid w-full max-w-[84rem] grid-cols-1 md:grid-cols-2">
-          <div className="mb-20 h-fit w-full">
+          <div className="mb-20 md:h-full w-full">
             <Hero />
           </div>
           <div className="flex w-full flex-col">
