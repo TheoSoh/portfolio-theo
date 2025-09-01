@@ -46,7 +46,7 @@ const Contact = ({ sectionRef }) => {
 
   return (
     <section ref={sectionRef} className="flex w-full flex-col gap-9 pt-20 md:pt-16 2xl:pt-28">
-      <h1>Feel free to send me a message...</h1>
+      <h1>Feel free to say hi...</h1>
       <div
         ref={formRef}
         className={`flex w-full min-w-fit flex-col gap-6 rounded-md border border-graphite bg-gray p-3 lg:w-2/3 ${isVisible ? 'fade-in-y' : 'opacity-0'}`}
