@@ -23,7 +23,7 @@ const Education = ({ sectionRef }) => {
 
   return (
     <section ref={sectionRef} className="scroll-target flex w-full flex-col gap-9">
-      <h1 className="font-mono">My completed or ongoing courses...</h1>
+      <h1 className="font-mono">Here are my completed courses...</h1>
       <div className="flex w-full flex-col gap-8">
         <University universityTitle="ÖREBRO UNIVERSITY" courses={oerebroUniversityCourses} />
         <University
