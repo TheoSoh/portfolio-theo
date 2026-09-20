@@ -8,8 +8,8 @@ const About = ({ sectionRef }) => {
       <p>
         I hold a <b>Bachelor's degree in Informatics</b> from Örebro University, where I completed
         the <b>Systems Analysis Programme</b> in June 2025. Since graduating, I have worked with
-        business development, machine virtualization, Networking and integration flows, while also
-        earning certifications in integration development on the Frends integration platform.
+        business development, machine virtualization, Networking and system integration, while also
+        earning certifications in integration- and API development on the Frends integration platform.
       </p>
       <p>
         My main passion lies in web and software development. I enjoy building solutions that are
@@ -19,7 +19,7 @@ const About = ({ sectionRef }) => {
         in both my professional and personal life.
       </p>
       <p>
-        Would describe myself as driven, social, communicative, and detail-oriented. I enjoy
+        I would describe myself as driven, analytical, and detail-oriented. I enjoy
         collaborating with others, understanding needs from different perspectives, and turning
         ideas into concrete solutions.
       </p>
