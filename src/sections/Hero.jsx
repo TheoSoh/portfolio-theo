@@ -17,8 +17,8 @@ const Hero = () => {
       <h1 className="pb-4 text-6xl font-bold md:text-4xl lg:text-6xl">Theo Sohlman</h1>
       <h2 className="pb-8 text-lg font-semibold">Software Dev.</h2>
       <p className="text-left 2xl:w-2/3 sm:pr-12">
-        Eager to apply knowledge and experience to deliver value and innovation. Explore my work and
-        discover how I can contribute to your next project.
+        Eager to apply knowledge and experience to deliver value and innovation. Explore some of my
+        work and contact me for potential opportunities.
       </p>
       <div className="flex h-full w-full flex-col justify-end">
         <Navigation />
