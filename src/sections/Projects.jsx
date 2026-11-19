@@ -36,7 +36,7 @@ const Projects = ({ sectionRef }) => {
       ref={sectionRef}
       className="scroll-target flex w-full flex-col gap-9 pb-20 md:pb-16 2xl:pb-28"
     >
-      <h1 className="w-full font-mono">Here are some of my projects...</h1>
+      <h1 className="w-full font-mono">Some of my projects...</h1>
       <div className="grid w-full grid-cols-2 gap-10">
         <div className="col-span-2 flex flex-col gap-10 xl:col-span-1">
           <Project
