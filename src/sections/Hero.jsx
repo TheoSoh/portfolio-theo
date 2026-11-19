@@ -18,7 +18,7 @@ const Hero = () => {
       <h2 className="pb-8 text-lg font-semibold">Software Dev.</h2>
       <p className="text-left 2xl:w-2/3 sm:pr-12">
         Eager to apply knowledge and experience to deliver value and innovation. Explore some of my
-        work and contact me for potential opportunities.
+        work and feel free to contact me for potential opportunities.
       </p>
       <div className="flex h-full w-full flex-col justify-end">
         <Navigation />
